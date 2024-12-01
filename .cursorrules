@@ -1,0 +1,173 @@
+{
+  "project_name": "Fusionix",
+  "description": "Fusionix is a robust, AI-powered data integration and analytics platform designed to unify data, optimize workflows, and create dynamic dashboards. It supports integrations with popular platforms, offers SQL query capabilities, and enables marketing optimization with AI-driven suggestions.",
+  "rules": {
+    "framework": {
+      "frontend": "Next.js",
+      "backend": "Vercel Serverless Functions with Node.js",
+      "database": "PostgreSQL",
+      "ai_framework": "TensorFlow.js or OpenAI API",
+      "deployment": "Vercel for both frontend and backend"
+    },
+    "file_structure": {
+      "root": ["README.md", "package.json", ".gitignore", ".env"],
+      "src": {
+        "frontend": [
+          "pages",
+          "components",
+          "styles",
+          "utils",
+          "public"
+        ],
+        "backend": [
+          "api/integrations",
+          "api/sql",
+          "api/dashboard",
+          "api/auth"
+        ],
+        "database": ["schemas", "migrations", "seeds"],
+        "ai": ["services", "models", "training_data"],
+        "tests": ["frontend", "backend", "integration"]
+      },
+      "config": ["eslint.json", "prettier.json"]
+    },
+    "features": {
+      "integration_hub": {
+        "description": "Central hub to manage integrations with platforms such as Google Ads, GA4, Shopify, QuickBooks, and Stripe.",
+        "modules": [
+          "OAuth2 authentication",
+          "API connection status",
+          "Scheduled syncs and real-time data fetch"
+        ]
+      },
+      "sql_terminal": {
+        "description": "Built-in SQL editor for advanced queries.",
+        "capabilities": [
+          "Schema retention",
+          "Query history",
+          "Error highlighting"
+        ]
+      },
+      "dashboard_builder": {
+        "description": "Drag-and-drop builder for creating custom dashboards.",
+        "features": [
+          "Pre-designed templates",
+          "Dynamic widget support",
+          "Client sharing with authentication"
+        ]
+      },
+      "ai_features": {
+        "description": "AI-driven insights and recommendations.",
+        "tools": [
+          "Ad performance analysis",
+          "Automated marketing rule creation",
+          "Predictive analytics for data trends"
+        ]
+      },
+      "document_management": {
+        "description": "Organized storage and retrieval of documents.",
+        "capabilities": [
+          "File upload with tagging",
+          "Advanced search and filtering",
+          "Integration with analytics data"
+        ]
+      },
+      "email_automation": {
+        "description": "Personalized email creation and automation.",
+        "modules": [
+          "Dynamic data population",
+          "Conditional triggers",
+          "Email scheduling"
+        ]
+      }
+    },
+    "ui_guidelines": {
+      "style": {
+        "primary_color": "#1E90FF",
+        "secondary_color": "#F5F5F5",
+        "font": "Inter",
+        "icons": "Heroicons"
+      },
+      "layout": {
+        "dashboard": "Responsive with a sidebar for navigation",
+        "terminal": "Full-width editor with collapsible results pane",
+        "integration_hub": "Tabbed view for connected platforms and actions"
+      },
+      "responsiveness": {
+        "breakpoints": {
+          "mobile": "480px",
+          "tablet": "768px",
+          "desktop": "1024px"
+        }
+      }
+    },
+    "dependencies": {
+      "frontend": [
+        "react",
+        "next",
+        "tailwindcss",
+        "chart.js"
+      ],
+      "backend": [
+        "pg",
+        "jsonwebtoken",
+        "axios"
+      ],
+      "dev": [
+        "eslint",
+        "prettier",
+        "nodemon"
+      ]
+    },
+    "constraints": {
+      "ai_model": {
+        "schema_retention": "Ensure AI retains schema memory for SQL queries.",
+        "recommendations_accuracy": "Validate AI suggestions using real-world test data."
+      },
+      "api_limits": {
+        "rate_limit_handling": "Implement retry logic for APIs with rate limits."
+      },
+      "security": {
+        "authentication": "OAuth2 for third-party logins and JWT for session management.",
+        "encryption": {
+          "data_in_transit": "TLS 1.2+",
+          "data_at_rest": "AES-256"
+        }
+      }
+    },
+    "tasks": [
+      {
+        "title": "Setup Base Project",
+        "steps": [
+          "Initialize frontend with Next.js.",
+          "Set up Vercel Serverless Functions for backend.",
+          "Integrate PostgreSQL database."
+        ]
+      },
+      {
+        "title": "Implement Core Features",
+        "steps": [
+          "Build SQL terminal UI and backend.",
+          "Create integration hub API connectors.",
+          "Develop AI-powered marketing tools."
+        ]
+      },
+      {
+        "title": "Add Custom Dashboards",
+        "steps": [
+          "Build dashboard drag-and-drop functionality.",
+          "Connect widgets to data sources.",
+          "Set up authentication for shared dashboards."
+        ]
+      },
+      {
+        "title": "Final Testing & Deployment",
+        "steps": [
+          "Conduct end-to-end testing.",
+          "Deploy frontend and backend to Vercel.",
+          "Ensure all systems are stable."
+        ]
+      }
+    ]
+  }
+}
